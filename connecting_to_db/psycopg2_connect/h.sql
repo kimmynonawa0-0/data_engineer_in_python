@@ -1,0 +1,12 @@
+CREATE TABLE h(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50)
+);
+INSERT INTO h(name)
+VALUES('miko');
+
+DELETE FROM h
+WHERE id >1;
+
+ALTER TABLE h 
+ADD CONSTRAINT name UNIQUE (name);
