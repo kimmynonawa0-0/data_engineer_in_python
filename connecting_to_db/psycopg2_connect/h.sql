@@ -10,3 +10,7 @@ WHERE id >1;
 
 ALTER TABLE h 
 ADD CONSTRAINT name UNIQUE (name);
+
+UPDATE h
+SET id = 2
+WHERE name = 'shai';
