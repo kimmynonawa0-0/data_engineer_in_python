@@ -15,3 +15,7 @@ with open("datasets/movies.json","r") as file:
 
 for k in data.keys():
     print(f"{k}: {data[k]}")
+    #h
+
+
+    
