@@ -3,10 +3,10 @@ from bs4 import BeautifulSoup
 import requests
 
 url3 = 'https://www.python.org/~guido/'
-request = requests.get(url3)
-r = request.text
-soup = BeautifulSoup(r)
-soup_pretty = soup.prettify()
+request = requests.get(url3) #sending get request
+r = request.text #reads the raw html response into a string
+soup = BeautifulSoup(r) #instiate object soup that parses the html 
+soup_pretty = soup.prettify() #formatting the html text
 print(soup_pretty)
 
 a_tags = soup.find_all('a')
