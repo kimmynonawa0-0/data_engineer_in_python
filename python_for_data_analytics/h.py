@@ -1,0 +1,1 @@
+print("i am an aspiring data analyst!")

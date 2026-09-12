@@ -23,7 +23,9 @@ try:
     assert df['duration_trim_int'].dtype == 'int'
 except AssertionError:
     print("wrong data type!")
-
+    
+print("--------------------------")
 print(df.head(2))
 print(df.info())
 print(df.describe())
+print(df['duration_trim_int'].mean())
