@@ -7,3 +7,13 @@ print(f"height in inches: {np_height_in}\ndata type: {type(np_height_in)}") #the
 #converting to meters
 np_height_m = np_height_in * 0.0254
 print(f"height in meters: {np_height_m}\ndata type: {type(np_height_in)}")
+
+#using python loop to convert
+height_m = []
+for h in height:
+    cal = h * 0.0254
+    height_m.append(round(cal,4))
+print(f"height in meters using python loop: {height_m}\ndata type: {type(height_m)}")
+
+#numpy array indexing
+print(np_height_in[0:-2]) #same as python list
