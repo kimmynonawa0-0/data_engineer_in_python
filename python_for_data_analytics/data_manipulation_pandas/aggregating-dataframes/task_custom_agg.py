@@ -19,4 +19,3 @@ def score_range(col):
 print(f"score range for math: {students['math'].agg(score_range)}")
 print("range of all subjects:\n", students[['math','science','english']].agg(score_range))
 print("range and median of all subjects:\n", students[['math','science','english']].agg([score_range, 'median']))
-
